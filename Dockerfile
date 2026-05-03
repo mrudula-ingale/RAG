@@ -23,4 +23,4 @@ EXPOSE 10000
 
 # Run FastAPI app
 #CMD ["uv", "run", "uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
-CMD ["uv", "run", "streamlit", "run", "ui/streamlit_app.py", "--server.address", "0.0.0.0", "--server_port", "10000"]
+CMD ["uv", "run", "streamlit", "run", "ui/streamlit_app.py", "--server.address", "0.0.0.0", "--server.port", "10000"]
