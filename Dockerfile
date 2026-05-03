@@ -24,4 +24,4 @@ EXPOSE 10000
 # Run FastAPI app
 #CMD ["uv", "run", "uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
 #CMD ["uv", "run", "streamlit", "run", "ui/streamlit_app.py", "--server.address", "0.0.0.0", "--server.port", "10000"]
-CMD ["sh", "-c", "uv run streamlit run ui/streamlit_app.py --server.address 0.0.0.0 --server.port $PORT --server.enableCORS false --server.enableXsrfProtection false"]
+CMD ["sh", "-c", "uv run streamlit run ui/streamlit_app.py --server.address 0.0.0.0 --server.port ${PORT:-10000} --server.headless true --server.enableCORS false --server.enableXsrfProtection false --server.fileWatcherType none --browser.gatherUsageStats false"]
