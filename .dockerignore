@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.git/
+.env
+*.pyc
+structure.txt
+structure_clean.txt
+notebooks/

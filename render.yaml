@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rag-ai-policy-assistant
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_MODE
+        value: direct
+      - key: GROQ_API_KEY
+        sync: false
