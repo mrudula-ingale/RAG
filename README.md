@@ -61,35 +61,61 @@ This project supports two modes of operation:
 
 ### 1. Direct Mode (Default)
 
-User Query
+User Query 
+
    ↓
+
 Streamlit UI
+
    ↓
+
 Retriever (Chroma Vector Store)
+   
    ↓
+
 Top-k Relevant Chunks
+
    ↓
+
 Prompt Template
+
    ↓
+
 Groq LLM (Llama 3.1)
+
    ↓
+
 Answer + Sources
 
 ### 2. API Mode
 User
+
    ↓
+
 Streamlit UI
+
    ↓
+
 FastAPI (/query endpoint)
+
    ↓
+
 Retriever (Chroma Vector Store)
+
    ↓
+
 Top-k Relevant Chunks
+
    ↓
+
 Prompt Template
+
    ↓
+
 Groq LLM (Llama 3.1)
+
    ↓
+
 Answer + Sources
 
 ## Project Structure
